@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Blog - ABDT-369</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+    <nav class="bg-purple-800 p-6 shadow-lg">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold">← Back</a>
+            <h1 class="text-3xl font-bold">Project #3</h1>
+        </div>
+    </nav>
+
+    <div class="max-w-6xl mx-auto p-8 mt-10">
+        <div class="bg-gray-800 rounded-2xl shadow-2xl overflow-hidden">
+            <div class="bg-gradient-to-r from-pink-600 to-purple-600 h-96 flex items-center justify-center text-6xl">
+                <i class="fas fa-blog"></i>
+            </div>
+            <div class="p-10">
+                <h2 class="text-5xl font-bold mb-4">Personal Tech Blog</h2>
+                <p class="text-xl text-gray-300 mb-8">
+                    My journey learning Java, Spring Boot, and full-stack development. Features Markdown support, comments, and categories.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+                    <div class="bg-gray-700 p-6 rounded-xl text-center">
+                        <h3 class="text-2xl font-bold text-pink-400">Features</h3>
+                        <p>Markdown Posts • Comments • Tags</p>
+                    </div>
+                    <div class="bg-gray-700 p-6 rounded-xl text-center">
+                        <h3 class="text-2xl font-bold text-indigo-400">Tech</h3>
+                        <p>Spring Boot • Thymeleaf • H2 Database</p>
+                    </div>
+                    <div class="bg-gray-700 p-6 rounded-xl text-center">
+                        <h3 class="text-2xl font-bold text-red-400">Status</h3>
+                        <p>In Development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

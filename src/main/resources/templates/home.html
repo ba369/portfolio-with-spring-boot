@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ABDT-369 | Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-600 to-blue-600">
+        <div class="text-center px-6">
+            <h1 class="text-6xl md:text-8xl font-bold mb-4 animate-pulse">ABDT-369</h1>
+            <p class="text-2xl md:text-4xl mb-8">Full Stack Java Developer</p>
+            <div class="space-x-6 text-4xl">
+                <a href="https://github.com" class="hover:text-purple-300"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com" class="hover:text-purple-300"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/ABDT369" class="hover:text-purple-300"><i class="fab fa-x-twitter"></i></a>
+            </div>
+            <a href="#projects" class="mt-10 inline-block bg-white text-purple-600 px-8 py-4 rounded-full text-xl font-bold hover:bg-purple-200 transition">
+                See My Work
+            </a>
+			<a href="/contact" class="mt-10 inline-block bg-white text-purple-600 px-8 py-4 rounded-full text-xl font-bold hover:bg-purple-200 transition ml-4">
+			    Contact Me
+			</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6">
+        <h2 class="text-5xl font-bold text-center mb-16">My Projects</h2>
+		<!-- Replace your entire 3 project cards section with this: -->
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+
+		    <!-- Project 1 – CLICKABLE -->
+		    <a href="/project/1" class="block transform hover:scale-105 transition duration-300">
+		        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-2xl">
+		            <div class="bg-gray-700 h-48 flex items-center justify-center">
+		                <i class="fas fa-laptop-code text-6xl"></i>
+		            </div>
+		            <div class="p-6">
+		                <h3 class="text-2xl font-bold">Spring Boot Portfolio</h3>
+		                <p class="text-gray-400 mt-2">This exact website you're seeing! Built with Spring Boot + Thymeleaf + Tailwind</p>
+		                <div class="mt-4">
+		                    <span class="bg-purple-600 px-3 py-1 rounded-full text-sm">Java</span>
+		                    <span class="bg-blue-600 px-3 py-1 rounded-full text-sm ml-2">Spring Boot</span>
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+
+		    <!-- Project 2 – CLICKABLE -->
+		    <a href="/project/2" class="block transform hover:scale-105 transition duration-300">
+		        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-2xl">
+		            <div class="bg-gray-700 h-48 flex items-center justify-center">
+		                <i class="fas fa-shopping-cart text-6xl"></i>
+		            </div>
+		            <div class="p-6">
+		                <h3 class="text-2xl font-bold">E-Commerce App</h3>
+		                <p class="text-gray-400 mt-2">Full shopping site with payment gateway (coming soon!)</p>
+		                <div class="mt-4">
+		                    <span class="bg-green-600 px-3 py-1 rounded-full text-sm">Spring Security</span>
+		                    <span class="bg-yellow-600 px-3 py-1 rounded-full text-sm ml-2">MySQL</span>
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+
+		    <!-- Project 3 – CLICKABLE -->
+		    <a href="/project/3" class="block transform hover:scale-105 transition duration-300">
+		        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-2xl">
+		            <div class="bg-gray-700 h-48 flex items-center justify-center">
+		                <i class="fas fa-blog text-6xl"></i>
+		            </div>
+		            <div class="p-6">
+		                <h3 class="text-2xl font-bold">Personal Blog</h3>
+		                <p class="text-gray-400 mt-2">My coding journey and tutorials</p>
+		                <div class="mt-4">
+		                    <span class="bg-pink-600 px-3 py-1 rounded-full text-sm">Thymeleaf</span>
+		                    <span class="bg-indigo-600 px-3 py-1 rounded-full text-sm ml-2">Markdown</span>
+		                </div>
+		            </div>
+		        </div>
+		    </a>
+
+		</div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-10 text-center">
+        <p class="text-xl">Made with ❤️ using Spring Boot by <strong>ABDT-369</strong></p>
+        <p>Tamil Nadu, India • 2025</p>
+    </footer>
+</body>
+</html>

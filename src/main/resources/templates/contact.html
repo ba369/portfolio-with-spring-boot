@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me - ABDT-369</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+<div class="max-w-lg w-full bg-gray-800 p-10 rounded-2xl shadow-2xl">
+    <h1 class="text-4xl font-bold text-center mb-8">Contact Me</h1>
+
+    <form th:action="@{/send}" method="post" class="space-y-6">
+        <input type="text" name="name" placeholder="Your Name" required
+               class="w-full p-4 rounded-lg bg-gray-700 focus:outline-none focus:ring-4 focus:ring-purple-500">
+
+        <input type="email" name="email" placeholder="Your Email" required
+               class="w-full p-4 rounded-lg bg-gray-700 focus:outline-none focus:ring-4 focus:ring-purple-500">
+
+        <textarea name="message" rows="6" placeholder="Your Message" required
+                  class="w-full p-4 rounded-lg bg-gray-700 focus:outline-none focus:ring-4 focus:ring-purple-500"></textarea>
+
+        <button type="submit"
+                class="w-full bg-gradient-to-r from-purple-600 to-pink-600 py-4 rounded-lg font-bold text-xl hover:from-purple-700 hover:to-pink-700 transition">
+            Send Message
+        </button>
+    </form>
+
+    <div th:if="${success}" class="mt-6 p-4 bg-green-600 rounded-lg text-center">
+        Message sent successfully! I'll reply soon
+    </div>
+    <div th:if="${error}" class="mt-6 p-4 bg-red-600 rounded-lg text-center">
+        Oops! Something went wrong. Try again later.
+    </div>
+
+    <p class="text-center mt-8">
+        <a href="/" class="text-purple-400 hover:underline">← Back to Portfolio</a>
+    </p>
+</div>
+</body>
+</html>
